@@ -1,0 +1,291 @@
+/* /////////////////////// */
+/* //// GLOBAL STYLES //// */
+/* /////////////////////// */
+
+* {
+	padding: 0;
+	margin: 0;
+	font-weight: inherit;
+	box-sizing: border-box;
+    --title-font: 'Open Sans Condensed', sans-serif;
+	--body-font: 'Raleway', sans-serif;
+	--light-blue: #e7f7fd;
+	--dark-blue: #036e95;
+	text-align: center;
+	font-family: var(--body-font);
+}
+
+body {
+	background-image: linear-gradient( rgba(255,255,255,0.5), rgba(255, 255, 255, 0.5) ),url(Resources/img/sea1.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+section {
+	margin: 2em 0em;
+	background-color: white;
+}
+
+.inner {
+	margin: 2em 0em;
+	padding: 1em;
+}
+
+h1 {
+	font-family: var(--title-font);
+	font-size: 5em;
+	margin-bottom: 0.2em;
+}
+
+a {
+	font-size: 1.5em;
+	color: var(--dark-blue);
+	text-decoration: none;
+}
+
+p {
+	font-size: 1.5em;
+}
+
+.white {
+	color: white;
+}
+
+
+
+/* ////////////////// */
+/* //// PARALLAX //// */
+/* ////////////////// */
+
+.parallax-1 {
+	background-image: url(Resources/img/sail1.jpg);
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+}
+
+.parallax-2 {
+	background-image: url(Resources/img/sail2.jpg);
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+}
+
+.parallax-3 {
+	background-image: url(Resources/img/sail3.jpg);
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+}
+
+.parallax-4 {
+	background-image: url(Resources/img/sail4.jpg);
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+}
+
+
+
+/* //////////////////// */
+/* //// NAVIGATION //// */
+/* //////////////////// */
+
+#navbar {
+	background-color: white;
+}
+
+.navigation {
+	position: sticky;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	position: -webkit-sticky;/* Safari */
+	z-index: 1;
+	border-bottom: 4px solid var(dark-blue);
+	background-color: white;
+}
+
+.navigation a.icon {
+	display: none;
+}
+
+#navbar ul {
+	display: inline-flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+#navbar li {
+	padding: 0.3em 1.5em;
+	flex-grow: 1;
+}
+
+
+
+/* ///////////////////////// */
+/* //// TOP AND REVIEWS //// */
+/* ///////////////////////// */
+
+.text-over-image {
+	background: linear-gradient( rgba(0,0,0,0.3), rgba(0, 0, 0, 0.3) ), url("Resources/img/top1.jpg");
+	background-position: center;
+ 	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 2em 0;
+	height: 40em;
+}
+
+.padding-top {
+	padding-top: 25vh;
+}
+
+.review-container {
+	color: black;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 2em 0;
+}
+
+.review {
+	margin: 1em;
+	padding: 1.5em;
+	width: 25%;
+	border-left: 4px solid #036e95;
+	transform: skewX(-15deg);
+	background-color: #e7f7fd;
+	border-radius: 10px;	
+}
+
+.review p {
+	transform: skewX(15deg);
+	font-style: italic;
+	font-size: 1em;
+}
+
+
+
+/* ///////////// */
+/* // PRICING // */
+/* ///////////// */
+
+
+.price-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.price img {
+	max-width: 20em;
+}
+
+.price {
+	margin: 0.5em;
+	position: relative;
+}
+
+
+.price-float {
+	background-color: #e2fdf9;
+	opacity: 0.8;
+	padding: 0.5em;
+	font-weight: bolder;
+	width: 100%;
+	position: absolute;
+	bottom: 3px;
+	left: 0em;
+}
+
+
+
+/* ///////////// */
+/* // CONTACT // */
+/* ///////////// */
+
+.form-container {
+	display: inline-flex;
+	flex-wrap: nowrap;
+	text-align: left;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.inputs {
+	text-align: left;
+	padding: 0.5em;
+	border: 1px solid #bbb;
+	border-radius: 4px;
+}
+
+label {
+	text-align: left;
+	padding: 0.5em 0;
+}
+
+.submit-button {
+	padding: 0.5em 1em;
+	font-size: 1em;
+}
+
+/* //////////////////// */
+/* // MEDIA QUERIES // */
+/* /////////////////// */
+
+@media only screen and (max-width: 980px) {
+	.navigation {
+		overflow: hidden;
+	}
+	
+	.navigation #navbar {
+		display: none;
+	}
+	
+	 .navigation #navbar.shown {
+		display: block;
+	}
+	
+	.navigation a.icon {
+		text-align: right;
+		position: relative;
+		display: block;
+		font-size: 2.5em;
+		padding: 0 0.5em;
+	}
+
+	#navbar ul {
+		display: inline-block;
+	}
+	
+	.review-container {
+		overflow-y: scroll;
+		height: 50vh;
+	}
+	
+	.review {
+		width: 100%;
+	}
+	
+	.padding-top {
+		padding-top: 5vh;
+	}
+
+	.inputs {
+		max-width: 60vh;
+	}
+}

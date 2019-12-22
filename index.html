@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Sailing vacations - example front-end development project">
+	<title>North Bay Sailing</title>
+	<link rel="stylesheet" href="styles.css?v=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="resources/main.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<nav class="navigation">
+		<a href="javascript:void(0);" class="icon" aria-label="Main menu" onclick="toggleHamburgerMenu()">
+			<i class="fa fa-bars"></i>
+		</a>
+		<nav id="navbar">
+			<ul>
+				<li><a href="#Home">Top</a></li>
+				<li><a href="#About">About North Bay Sailing</a></li>
+				<li><a href="#Explore">Explore</a></li>
+				<li><a href="#Pricing">Pricing</a></li>
+				<li><a href="#Contact">Contact</a></li>
+			</ul>
+		</nav>
+	</nav>
+	
+	<main>
+		<section id="Home" class="text-over-image padding-top white">
+			<div class="inner">
+				<h1>North Bay Sailing</h1>
+				<p>The top sailing and adventure company in St. John's, Newfoundland</p>
+
+				<div class="review-container">
+					<div class="review">
+						<p>"Fantastic experience! Sam and Lizzy were a lot of fun, and made sure we were completely satisfied. 10/10!"</p>
+					</div>
+					<div class="review">
+						<p>"I'm definitely recommending North Bay to all my friends. I took so many great pictures! ⭐⭐⭐⭐⭐"</p>
+					</div>
+
+					<div class="review">
+						<p>"I was always in love with Northeast Canada but Sam and Liz really know how to bring out the beauty of the Atlantic."</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="parallax-1">
+		</section>
+		
+		<section id="About">
+			<div class="inner">
+				<h1>About North Bay Sailing</h1>
+				<p>North Bay Sailing is a small, family-owned sailing company based out of St. John's, Newfoundland. With us, you'll get the local treatment. Come see the best coastline views of the easternmost city of Canada.</p><br>
+				<p>Founded in 1987 by Sam and Lizzy Anderson, North Bay was created with the desire to highlight the natural beauty of Atlantic Canada. Come experience the unique beauty of the coast from our sailing vessel, no sailing experience required.</p>
+			</div>
+		</section>
+		
+		<section class="parallax-2">
+		</section>
+		
+		<section id="Explore">
+			<div class="inner">
+				<h1>Explore with North Bay</h1>
+				<p>Gorgeous, clear waters, beautiful sights, and the thrill of adventure. No matter your current skill level, we have the trip for you.</p><br>
+				<p>Explore the sea with North Bay Sailing, take in the unique and stunning coastline of St. John's, and enjoy all the best views and amenities that only the locals know about.</p>
+			</div>
+		</section>
+
+		<section class="parallax-3">
+		</section>
+		
+		<section id="Pricing">
+			<div class="inner">
+				<h1>Pricing</h1>
+				<p>We offer multiple trips at varying affordable prices.</p>
+				
+				<div class="price-container">
+					<div class="price">
+						<img src="Resources/img/boat1.jpg">
+						<span class="price-float">Sailing Getaways - $240</span>
+					</div>
+					<div class="price">
+						<img src="Resources/img/boat2.jpg">
+						<span class="price-float">Sailing Getaways for Groups - $280</span>
+					</div>
+					<div class="price">
+						<img src="Resources/img/boat3.jpg">
+						<span class="price-float">Individual Bay Tours - $350</span>
+					</div>
+					<div class="price">
+						<img src="Resources/img/boat4.jpg">
+						<span class="price-float">Group Tours - $500</span>
+					</div>
+					<div class="price">
+							<img src="Resources/img/boat5.jpg">
+							<span class="price-float">Other - Contact Us</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="parallax-4">
+		</section>
+		
+		<section id="Contact">
+			<div class="inner">
+				<h1>Contact</h1>
+				<p>Feel free to contact us with any questions.</p>
+				<br>
+				<p>555-663-2019</p>
+				<p>123 Maddox Cove Road, St. John's, NL, A1G 1T6</p>
+				<br>
+				<form>
+					<div class="form-container">
+						<label for="name">Name:
+							<br>
+						<input name="name" class="inputs">
+						</label>
+
+						<label for="phone">Phone Number:
+							<br>
+						<input name="phone" class="inputs">
+						</label>
+						
+						<label for="questions">Questions or Comments:
+							<br>
+						<textarea name="questions" class="inputs" rows="4" cols="50"></textarea>
+						</label>
+						
+						<input type="submit" value="Submit" class="submit-button">
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+	
+</body>
+
+</html>
