@@ -65,8 +65,15 @@ p {
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 	margin: 0;
+      top:0;
+      left:0;
+      right:0;
+      z-index:-1; /* needed to keep in the background */
 }
 
 .parallax-2 {
@@ -282,7 +289,7 @@ label {
 	}
 	
 	.padding-top {
-		padding-top: 5vh;
+		padding-top: 0vh;
 	}
 
 	.inputs {
