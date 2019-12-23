@@ -59,53 +59,14 @@ p {
 /* //// PARALLAX //// */
 /* ////////////////// */
 
-.parallax-1 {
-	background-image: url(Resources/img/sail1.jpg);
-	height: 100vh;
+.parallax {
+	height: 500px;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	margin: 0;
-      top:0;
-      left:0;
-      right:0;
-      z-index:-1; /* needed to keep in the background */
+	background-size: 100% auto;
+/*	background-size: cover;*/
 }
-
-.parallax-2 {
-	background-image: url(Resources/img/sail2.jpg);
-	height: 100vh;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin: 0;
-}
-
-.parallax-3 {
-	background-image: url(Resources/img/sail3.jpg);
-	height: 100vh;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin: 0;
-}
-
-.parallax-4 {
-	background-image: url(Resources/img/sail4.jpg);
-	height: 100vh;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin: 0;
-}
-
 
 
 /* //////////////////// */
@@ -254,7 +215,7 @@ label {
 /* // MEDIA QUERIES // */
 /* /////////////////// */
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 768px) {
 	.navigation {
 		overflow: hidden;
 	}
@@ -294,5 +255,9 @@ label {
 
 	.inputs {
 		max-width: 60vh;
+	}
+	
+	.parallax {
+		background-attachment: inherit;
 	}
 }
