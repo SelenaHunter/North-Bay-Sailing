@@ -13,6 +13,10 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+
+
+
+
 <body>
 	<nav class="navigation">
 		<a href="javascript:void(0);" class="icon" aria-label="Main menu">
@@ -57,19 +61,25 @@
 		<!-- Delete when done testing -->
 		<section id="TEST">
 		
-			<div class="panel-title toggle" role="button" aria-role="button"><a data-toggle="collapse" class="collapsed"
+			<!-- <div class="accordion" role="button" aria-role="button"><a data-toggle="collapse" class="collapsed"
 					data-target="#collapse-1-7450" href="#collapse-1-7450" tabindex="0" aria-expanded="true" aria-selected="true">
 					<div>What is This?</div>
 				</a></div>
 		
-			<div id="collapse-1-7450">
+			<div id="collapse-1-7450" class="panel">
 				<div style="padding:1rem;">
 					<p>Lorem ipsum test test test.</p>
 					<p>More test test test. Test test? Test.</p>
+					<p>More test test test. Test test? Test.</p>
 				</div>
+			</div> -->
+	
+
+			<button class="accordion panel-title">Section 1</button>
+			<div class="panel">
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
-		
-		
+			
 		
 		</section>
 
@@ -196,5 +206,27 @@
 	</script>
 	
 </body>
+
+
+
+
+
+<script>
+	var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+} 
+</script>
 
 </html>
